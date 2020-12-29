@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClientIdentitySer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClient", "demo\4_JavaScriptClient\JavaScriptClient\JavaScriptClient.csproj", "{1C48C615-09A1-410D-826A-56D9EBD86EE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClientApi", "demo\4_JavaScriptClient\JavaScriptClientApi\JavaScriptClientApi.csproj", "{69C0F448-CB61-458C-9D5F-704438010EAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{1C48C615-09A1-410D-826A-56D9EBD86EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C48C615-09A1-410D-826A-56D9EBD86EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C48C615-09A1-410D-826A-56D9EBD86EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C0F448-CB61-458C-9D5F-704438010EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C0F448-CB61-458C-9D5F-704438010EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C0F448-CB61-458C-9D5F-704438010EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C0F448-CB61-458C-9D5F-704438010EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -190,6 +196,7 @@ Global
 		{340BD582-4E0E-4C72-B922-80A64C35A838} = {AB8D2454-E63A-4C44-B938-71DE4FB54315}
 		{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA} = {340BD582-4E0E-4C72-B922-80A64C35A838}
 		{1C48C615-09A1-410D-826A-56D9EBD86EE7} = {340BD582-4E0E-4C72-B922-80A64C35A838}
+		{69C0F448-CB61-458C-9D5F-704438010EAF} = {340BD582-4E0E-4C72-B922-80A64C35A838}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {305FC7CE-9C1D-4265-9FA8-2E523DEE4CBA}
