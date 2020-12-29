@@ -67,6 +67,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClient", "demo\4_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClientApi", "demo\4_JavaScriptClient\JavaScriptClientApi\JavaScriptClientApi.csproj", "{69C0F448-CB61-458C-9D5F-704438010EAF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_EntityFramework", "5_EntityFramework", "{3628BA23-6B56-4D1D-92AC-FE5477FDCA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkIdentityServer", "demo\5_EntityFramework\EntityFrameworkIdentityServer\EntityFrameworkIdentityServer.csproj", "{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +169,10 @@ Global
 		{69C0F448-CB61-458C-9D5F-704438010EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C0F448-CB61-458C-9D5F-704438010EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69C0F448-CB61-458C-9D5F-704438010EAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -197,6 +205,8 @@ Global
 		{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA} = {340BD582-4E0E-4C72-B922-80A64C35A838}
 		{1C48C615-09A1-410D-826A-56D9EBD86EE7} = {340BD582-4E0E-4C72-B922-80A64C35A838}
 		{69C0F448-CB61-458C-9D5F-704438010EAF} = {340BD582-4E0E-4C72-B922-80A64C35A838}
+		{3628BA23-6B56-4D1D-92AC-FE5477FDCA7C} = {AB8D2454-E63A-4C44-B938-71DE4FB54315}
+		{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245} = {3628BA23-6B56-4D1D-92AC-FE5477FDCA7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {305FC7CE-9C1D-4265-9FA8-2E523DEE4CBA}
