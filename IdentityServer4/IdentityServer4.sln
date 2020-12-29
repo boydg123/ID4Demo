@@ -59,6 +59,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAndApisMvcClient"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAndApisApi", "demo\3_AspNetCoreAndApis\AspNetCoreAndApisApi\AspNetCoreAndApisApi.csproj", "{A495B052-F804-4D19-8D03-9A7C45A345F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_JavaScriptClient", "4_JavaScriptClient", "{340BD582-4E0E-4C72-B922-80A64C35A838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClientIdentityServer", "demo\4_JavaScriptClient\JavaScriptClientIdentityServer\JavaScriptClientIdentityServer.csproj", "{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClient", "demo\4_JavaScriptClient\JavaScriptClient\JavaScriptClient.csproj", "{1C48C615-09A1-410D-826A-56D9EBD86EE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -145,6 +151,14 @@ Global
 		{A495B052-F804-4D19-8D03-9A7C45A345F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A495B052-F804-4D19-8D03-9A7C45A345F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A495B052-F804-4D19-8D03-9A7C45A345F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C48C615-09A1-410D-826A-56D9EBD86EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C48C615-09A1-410D-826A-56D9EBD86EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C48C615-09A1-410D-826A-56D9EBD86EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C48C615-09A1-410D-826A-56D9EBD86EE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -173,6 +187,9 @@ Global
 		{8AE62BD6-F4F6-4984-AE5B-1E44369907CB} = {92820EB0-2809-4BAA-9D33-DF8F317181ED}
 		{506E5AF9-F737-47BE-9AB4-712D73340B2E} = {92820EB0-2809-4BAA-9D33-DF8F317181ED}
 		{A495B052-F804-4D19-8D03-9A7C45A345F7} = {92820EB0-2809-4BAA-9D33-DF8F317181ED}
+		{340BD582-4E0E-4C72-B922-80A64C35A838} = {AB8D2454-E63A-4C44-B938-71DE4FB54315}
+		{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA} = {340BD582-4E0E-4C72-B922-80A64C35A838}
+		{1C48C615-09A1-410D-826A-56D9EBD86EE7} = {340BD582-4E0E-4C72-B922-80A64C35A838}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {305FC7CE-9C1D-4265-9FA8-2E523DEE4CBA}
