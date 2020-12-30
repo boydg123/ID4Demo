@@ -12,6 +12,7 @@ namespace IdentityServer4.Models
 {
     /// <summary>
     /// Models an OpenID Connect or OAuth2 client
+    /// OpenID Connect / OAuth2 客户端
     /// </summary>
     [DebuggerDisplay("{" + nameof(DebuggerDisplay) + ",nq}")]
     public class Client
@@ -27,7 +28,7 @@ namespace IdentityServer4.Models
         public bool Enabled { get; set; } = true;
 
         /// <summary>
-        /// Unique ID of the client
+        /// 一个唯一的客户端ID
         /// </summary>
         public string ClientId { get; set; }
 
@@ -41,6 +42,7 @@ namespace IdentityServer4.Models
 
         /// <summary>
         /// Client secrets - only relevant for flows that require a secret
+        /// 密钥
         /// </summary>
         public ICollection<Secret> ClientSecrets { get; set; } = new HashSet<Secret>();
 
@@ -81,6 +83,7 @@ namespace IdentityServer4.Models
 
         /// <summary>
         /// Specifies the allowed grant types (legal combinations of AuthorizationCode, Implicit, Hybrid, ResourceOwner, ClientCredentials).
+        /// 允许与令牌服务的交互（称为授权类型）
         /// </summary>
         public ICollection<string> AllowedGrantTypes
         {
@@ -153,6 +156,7 @@ namespace IdentityServer4.Models
 
         /// <summary>
         /// Specifies the api scopes that the client is allowed to request. If empty, the client can't access any scope
+        /// 允许客户端访问的Scope列表（API资源）
         /// </summary>
         public ICollection<string> AllowedScopes { get; set; } = new HashSet<string>();
 

@@ -22,6 +22,7 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         /// <summary>
         /// Adds the extension grant validator.
+        /// 添加用于扩展授权的IExtensionGrantValidator实现。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -36,6 +37,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds a redirect URI validator.
+        /// 添加IRedirectUriValidator实现来自定义重定向URI验证。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -50,6 +52,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds a an "AppAuth" (OAuth 2.0 for Native Apps) compliant redirect URI validator (does strict validation but also allows http://127.0.0.1 with random port)
+        /// 添加一个“AppAuth”（OAuth 2.0 for Native Apps）兼容的重定向URI验证器（进行严格的验证，但也允许随机端口为http://127.0.0.1）。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <returns></returns>
@@ -60,6 +63,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the resource owner validator.
+        /// 添加IResourceOwnerPasswordValidator`实现，用于验证资源所有者密码凭据授权类型的用户凭证
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -74,6 +78,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the profile service.
+        /// 添加IProfileService以实现连接到您的自定义用户配置文件存储。
+        /// DefaultProfileService`类提供了默认实现，它依靠身份验证cookie作为唯一的令牌发放源。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -185,6 +191,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds a CORS policy service cache.
+        /// 注册一个ICorsPolicyService装饰器实现，它将维护一个CORS策略服务评估结果的内存缓存。
+        /// 缓存持续时间可以在IdentityServerOptions上的缓存配置选项上配置。
         /// </summary>
         /// <typeparam name="T">The type of the concrete CORS policy service that is registered in DI.</typeparam>
         /// <param name="builder">The builder.</param>
@@ -199,6 +207,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the secret parser.
+        /// 添加用于解析客户端或API资源凭证的ISecretParser实现。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -213,6 +222,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the secret validator.
+        /// 添加ISecretValidator实现，以针对凭证存储验证客户端或API资源凭证。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -227,6 +237,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the client store cache.
+        /// 注册一个IClientStore装饰器实现，它将维护客户端配置对象的内存缓存。 缓存持续时间可以在IdentityServerOptions上的缓存配置选项上配置。
         /// </summary>
         /// <typeparam name="T">The type of the concrete client store class that is registered in DI.</typeparam>
         /// <param name="builder">The builder.</param>
@@ -243,6 +254,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the client store cache.
+        /// 注册一个IResourceStore装饰器实现，它将维护IdentityResource和ApiResource配置对象的内存缓存。
+        /// 缓存持续时间可以在IdentityServerOptions上的缓存配置选项上配置。
         /// </summary>
         /// <typeparam name="T">The type of the concrete scope store class that is registered in DI.</typeparam>
         /// <param name="builder">The builder.</param>
@@ -257,6 +270,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the authorize interaction response generator.
+        /// 添加IAuthorizeInteractionResponseGenerator实现来在授权端点定制逻辑，以便显示用户错误，登录，同意或任何其他自定义页面的UI。
+        /// AuthorizeInteractionResponseGenerator类提供了一个默认的实现，因此如果需要增加现有的行为，可以考虑从这个现有的类派生。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -271,6 +286,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the custom authorize request validator.
+        /// 添加ICustomAuthorizeRequestValidator实现，以在授权端点定制请求参数验证。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -285,6 +301,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the custom authorize request validator.
+        /// 添加ICustomTokenRequestValidator实现来定制令牌端点处的请求参数验证。
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="builder">The builder.</param>
@@ -299,6 +316,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds support for client authentication using JWT bearer assertions.
+        /// 使用JWT对客户机认证的支持。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <returns></returns>

@@ -17,6 +17,7 @@ namespace Microsoft.AspNetCore.Builder
 {
     /// <summary>
     /// Pipeline extension methods for adding IdentityServer
+    /// 管道中添加ID4，UseIdentityServer包含对UseAuthentication的调用，所以没有必要同时调用这两个。
     /// </summary>
     public static class IdentityServerApplicationBuilderExtensions
     {

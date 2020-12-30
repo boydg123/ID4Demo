@@ -18,11 +18,14 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Builder extension methods for registering crypto services
+    /// IdentityServer支持X.509证书（包括原始文件和对Windows证书存储的引用）、RSA密钥和EC密钥，用于令牌签名和验证。
+    /// 每个密钥都可以配置（兼容的）签名算法，例如RS256、RS384、RS512、PS256、PS384、PS512、ES256、ES384或ES512。
     /// </summary>
     public static class IdentityServerBuilderExtensionsCrypto
     {
         /// <summary>
-        /// Sets the signing credential.
+        /// 添加一个签名密钥服务，该服务将指定的密钥提供给各种令牌创建/验证服务。
+        /// 您可以传入X509Certificate2，SigningCredential或对证书存储区中证书的引用。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="credential">The credential.</param>
@@ -153,6 +156,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Sets the temporary signing credential.
+        /// 在启动时创建临时密钥。 这是仅用于开发场景，当您没有证书使用。 生成的密钥将被保存到文件系统，
+        /// 以便在服务器重新启动之间保持稳定（可以通过传递false来禁用）。 这解决了在开发期间client / api元数据缓存不同步的问题。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="persistKey">Specifies if the temporary key should be persisted to disk.</param>
@@ -194,6 +199,8 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the validation keys.
+        /// 添加验证令牌的密钥。 它们将被内部令牌验证器使用，并将显示在发现文档中。
+        /// 您可以传入X509Certificate2，SigningCredential或对证书存储区中证书的引用。 这对于关键的转换场景很有用。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="keys">The keys.</param>

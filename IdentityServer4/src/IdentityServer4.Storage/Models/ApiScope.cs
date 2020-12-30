@@ -10,7 +10,7 @@ using System.Diagnostics;
 namespace IdentityServer4.Models
 {
     /// <summary>
-    /// Models access to an API scope
+    /// 访问API的作用域
     /// </summary>
     [DebuggerDisplay("{" + nameof(DebuggerDisplay) + ",nq}")]
     public class ApiScope : Resource

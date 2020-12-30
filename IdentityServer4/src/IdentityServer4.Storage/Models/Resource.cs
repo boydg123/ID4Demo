@@ -8,7 +8,7 @@ using System.Diagnostics;
 namespace IdentityServer4.Models
 {
     /// <summary>
-    /// Models the common data of API and identity resources.
+    /// API和身份资源的公共数据模型
     /// </summary>
     [DebuggerDisplay("{DebuggerDisplay,nq}")]
     public abstract class Resource

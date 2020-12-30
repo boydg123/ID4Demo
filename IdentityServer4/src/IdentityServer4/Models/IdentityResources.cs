@@ -9,6 +9,7 @@ namespace IdentityServer4.Models
 {
     /// <summary>
     /// Convenience class that defines standard identity resources.
+    /// 支持定义规范中的所有作用域(scope)（openid，email，profile，电话和地址）
     /// </summary>
     public static class IdentityResources
     {

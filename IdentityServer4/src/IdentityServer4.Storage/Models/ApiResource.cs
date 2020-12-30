@@ -10,7 +10,7 @@ using System.Diagnostics;
 namespace IdentityServer4.Models
 {
     /// <summary>
-    /// Models a web API resource.
+    /// API×ÊÔ´
     /// </summary>
     [DebuggerDisplay("{" + nameof(DebuggerDisplay) + ",nq}")]
     public class ApiResource : Resource

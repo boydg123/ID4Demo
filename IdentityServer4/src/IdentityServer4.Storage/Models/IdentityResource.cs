@@ -10,7 +10,7 @@ using System.Diagnostics;
 namespace IdentityServer4.Models
 {
     /// <summary>
-    /// Models a user identity resource.
+    /// 用户标识资源
     /// </summary>
     [DebuggerDisplay("{" + nameof(DebuggerDisplay) + ",nq}")]
     public class IdentityResource : Resource

@@ -15,11 +15,16 @@ namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Builder extension methods for registering in-memory services
+    /// 各种“in-memory“配置API允许从配置对象的内存列表配置IdentityServer。 这些“in-memory”的集合可以在宿主应用程序中进行硬编码，
+    /// 也可以从配置文件或数据库动态加载。 但是，在设计时，只有托管应用程序启动时才会创建这些集合。
+    /// 使用这些配置API可用于原型设计，开发和/或测试时不需要在运行时动态查询配置数据的数据库。
+    /// 如果配置很少改变，这种配置方式也可能适用于生产方案，或者如果必须更改值，则需要重新启动应用程序并不方便。
     /// </summary>
     public static class IdentityServerBuilderExtensionsInMemory
     {
         /// <summary>
         /// Adds the in memory caching.
+        /// 要使用下面描述的任何缓存，必须在DI中注册ICache的实现。 此API注册基于ASP.NET Core的ICache 的MemoryCache默认内存缓存实现。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <returns></returns>
@@ -33,6 +38,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the in memory identity resources.
+        /// 添加基于IResourceStore的IdentityResource的内存集合注册实现，以注册身份验证资源。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="identityResources">The identity resources.</param>
@@ -61,6 +67,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the in memory API resources.
+        /// 添加基于IResourceStore的ApiResource的内存集合注册实现，以注册API资源。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="apiResources">The API resources.</param>
@@ -72,7 +79,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             return builder;
         }
-        
+
         /// <summary>
         /// Adds the in memory API resources.
         /// </summary>
@@ -117,6 +124,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Adds the in memory clients.
+        /// 添加基于IClientStore和ICorsPolicyService的内存集合注册实现，以注册客户端配置对象。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="clients">The clients.</param>
@@ -128,8 +136,8 @@ namespace Microsoft.Extensions.DependencyInjection
             builder.AddClientStore<InMemoryClientStore>();
 
             var existingCors = builder.Services.Where(x => x.ServiceType == typeof(ICorsPolicyService)).LastOrDefault();
-            if (existingCors != null && 
-                existingCors.ImplementationType == typeof(DefaultCorsPolicyService) && 
+            if (existingCors != null &&
+                existingCors.ImplementationType == typeof(DefaultCorsPolicyService) &&
                 existingCors.Lifetime == ServiceLifetime.Transient)
             {
                 // if our default is registered, then overwrite with the InMemoryCorsPolicyService
