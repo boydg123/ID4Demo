@@ -143,6 +143,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
         /// <summary>
         /// Sets an ECDsa-based signing credential.
+        /// 添加签名密钥服务，该服务为各种令牌创建/验证服务提供指定的密钥材料。您可以从证书存储中传入证书的X509Certificate2， SigningCredential或引用。
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="key">The ECDsa key.</param>

@@ -10,6 +10,21 @@ namespace IdentityServer
 {
     public static class Config
     {
+        //可以自定义Claims与Scope配合使用
+        public static IEnumerable<IdentityResource> GetIdentityResourceResources()
+        {
+            var customProfile = new IdentityResource(
+                "custom.profile",
+                "Custom profile",
+                new[] { "role" });
+
+            return new List<IdentityResource>
+            {
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile(),
+                customProfile
+            };
+        }
         public static IEnumerable<IdentityResource> IdentityResources =>
             new List<IdentityResource>
             {

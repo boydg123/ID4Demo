@@ -168,6 +168,7 @@ namespace IdentityServer4.Models
 
         /// <summary>
         /// Lifetime of identity token in seconds (defaults to 300 seconds / 5 minutes)
+        /// Identity token的有效期。
         /// </summary>
         public int IdentityTokenLifetime { get; set; } = 300;
 
@@ -178,6 +179,7 @@ namespace IdentityServer4.Models
 
         /// <summary>
         /// Lifetime of access token in seconds (defaults to 3600 seconds / 1 hour)
+        /// 设置申请的Token的有效期
         /// </summary>
         public int AccessTokenLifetime { get; set; } = 3600;
 
@@ -250,6 +252,7 @@ namespace IdentityServer4.Models
 
         /// <summary>
         /// Allows settings claims for the client (will be included in the access token).
+        /// 在此属性上设置的值将会被直接添加到AccessToken
         /// </summary>
         /// <value>
         /// The claims.
