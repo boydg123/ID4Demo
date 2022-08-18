@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30717.126
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C6CD4B99-B59F-4630-98D6-95A6DEF18685}"
 EndProject
@@ -49,31 +49,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_InteractiveAspNetCore", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteractiveAspNetCoreIdentityServer", "demo\2_InteractiveAspNetCore\InteractiveAspNetCoreIdentityServer\InteractiveAspNetCoreIdentityServer.csproj", "{AB1DA97E-5B3A-4926-8134-1189235B081C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InteractiveAspNetCoreMvcClient", "demo\2_InteractiveAspNetCore\InteractiveAspNetCoreMvcClient\InteractiveAspNetCoreMvcClient.csproj", "{9ADE9998-B061-48C5-99CD-5A29CEB809E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteractiveAspNetCoreMvcClient", "demo\2_InteractiveAspNetCore\InteractiveAspNetCoreMvcClient\InteractiveAspNetCoreMvcClient.csproj", "{9ADE9998-B061-48C5-99CD-5A29CEB809E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_AspNetCoreAndApis", "3_AspNetCoreAndApis", "{92820EB0-2809-4BAA-9D33-DF8F317181ED}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreAndApisIdentityServer", "demo\3_AspNetCoreAndApis\AspNetCoreAndApisIdentityServer\AspNetCoreAndApisIdentityServer.csproj", "{8AE62BD6-F4F6-4984-AE5B-1E44369907CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAndApisMvcClient", "demo\3_AspNetCoreAndApis\AspNetCoreAndApisMvcClient\AspNetCoreAndApisMvcClient.csproj", "{506E5AF9-F737-47BE-9AB4-712D73340B2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreAndApisMvcClient", "demo\3_AspNetCoreAndApis\AspNetCoreAndApisMvcClient\AspNetCoreAndApisMvcClient.csproj", "{506E5AF9-F737-47BE-9AB4-712D73340B2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAndApisApi", "demo\3_AspNetCoreAndApis\AspNetCoreAndApisApi\AspNetCoreAndApisApi.csproj", "{A495B052-F804-4D19-8D03-9A7C45A345F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreAndApisApi", "demo\3_AspNetCoreAndApis\AspNetCoreAndApisApi\AspNetCoreAndApisApi.csproj", "{A495B052-F804-4D19-8D03-9A7C45A345F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_JavaScriptClient", "4_JavaScriptClient", "{340BD582-4E0E-4C72-B922-80A64C35A838}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClientIdentityServer", "demo\4_JavaScriptClient\JavaScriptClientIdentityServer\JavaScriptClientIdentityServer.csproj", "{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaScriptClientIdentityServer", "demo\4_JavaScriptClient\JavaScriptClientIdentityServer\JavaScriptClientIdentityServer.csproj", "{95A6D14E-4F4E-4FF0-85F3-0D82F28152DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClient", "demo\4_JavaScriptClient\JavaScriptClient\JavaScriptClient.csproj", "{1C48C615-09A1-410D-826A-56D9EBD86EE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaScriptClient", "demo\4_JavaScriptClient\JavaScriptClient\JavaScriptClient.csproj", "{1C48C615-09A1-410D-826A-56D9EBD86EE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScriptClientApi", "demo\4_JavaScriptClient\JavaScriptClientApi\JavaScriptClientApi.csproj", "{69C0F448-CB61-458C-9D5F-704438010EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JavaScriptClientApi", "demo\4_JavaScriptClient\JavaScriptClientApi\JavaScriptClientApi.csproj", "{69C0F448-CB61-458C-9D5F-704438010EAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_EntityFramework", "5_EntityFramework", "{3628BA23-6B56-4D1D-92AC-FE5477FDCA7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkIdentityServer", "demo\5_EntityFramework\EntityFrameworkIdentityServer\EntityFrameworkIdentityServer.csproj", "{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkIdentityServer", "demo\5_EntityFramework\EntityFrameworkIdentityServer\EntityFrameworkIdentityServer.csproj", "{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6_AspNetIdentity", "6_AspNetIdentity", "{D0461812-AB63-4C4F-B8C9-F01492AF9607}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerAspNetIdentity", "demo\6_AspNetIdentity\IdentityServerAspNetIdentity\IdentityServerAspNetIdentity.csproj", "{2AE951EB-3485-4F75-A3E7-D815BC90F4F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerAspNetIdentity", "demo\6_AspNetIdentity\IdentityServerAspNetIdentity\IdentityServerAspNetIdentity.csproj", "{2AE951EB-3485-4F75-A3E7-D815BC90F4F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "oidcdemo", "oidcdemo", "{7ED83187-9B67-441A-9130-14B539E44C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.oidc.server.ids4", "oidcdemo\web.oidc.server.ids4\web.oidc.server.ids4.csproj", "{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +185,10 @@ Global
 		{2AE951EB-3485-4F75-A3E7-D815BC90F4F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AE951EB-3485-4F75-A3E7-D815BC90F4F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AE951EB-3485-4F75-A3E7-D815BC90F4F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -217,6 +225,7 @@ Global
 		{656DEA06-F26B-48A8-9DA6-5A6DBCCE6245} = {3628BA23-6B56-4D1D-92AC-FE5477FDCA7C}
 		{D0461812-AB63-4C4F-B8C9-F01492AF9607} = {AB8D2454-E63A-4C44-B938-71DE4FB54315}
 		{2AE951EB-3485-4F75-A3E7-D815BC90F4F4} = {D0461812-AB63-4C4F-B8C9-F01492AF9607}
+		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF} = {7ED83187-9B67-441A-9130-14B539E44C30}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {305FC7CE-9C1D-4265-9FA8-2E523DEE4CBA}

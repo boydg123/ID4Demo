@@ -8,14 +8,23 @@ using System.Collections.Generic;
 
 namespace IdentityServer4.Models
 {
+    /// <summary>
+    /// 授权许可
+    /// </summary>
     public class GrantTypes
     {
+        /// <summary>
+        /// 隐式许可
+        /// </summary>
         public static ICollection<string> Implicit =>
             new[] { GrantType.Implicit };
 
         public static ICollection<string> ImplicitAndClientCredentials =>
             new[]  { GrantType.Implicit, GrantType.ClientCredentials };
 
+        /// <summary>
+        /// 授权码
+        /// </summary>
         public static ICollection<string> Code =>
             new[] { GrantType.AuthorizationCode };
 
@@ -28,9 +37,15 @@ namespace IdentityServer4.Models
         public static ICollection<string> HybridAndClientCredentials =>
             new[] { GrantType.Hybrid, GrantType.ClientCredentials };
 
+        /// <summary>
+        /// 客户端凭据
+        /// </summary>
         public static ICollection<string> ClientCredentials =>
             new[] { GrantType.ClientCredentials };
 
+        /// <summary>
+        /// 资源所有者密码凭据
+        /// </summary>
         public static ICollection<string> ResourceOwnerPassword =>
             new[] { GrantType.ResourceOwnerPassword };
 
