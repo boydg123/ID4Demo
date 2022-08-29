@@ -54,7 +54,7 @@ namespace ServerSite.Ids4
         {
             get
             {
-                const string home = "http://oidc-client-hybrid.test";
+                const string home = "http://localhost:8011";
 
                 return new Client
                 {

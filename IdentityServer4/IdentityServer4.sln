@@ -77,7 +77,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServerAspNetIdentit
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "oidcdemo", "oidcdemo", "{7ED83187-9B67-441A-9130-14B539E44C30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.oidc.server.ids4", "oidcdemo\web.oidc.server.ids4\web.oidc.server.ids4.csproj", "{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web.oidc.server.ids4", "oidcdemo\web.oidc.server.ids4\web.oidc.server.ids4.csproj", "{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web.oidc.client.hybrid", "oidcdemo\web.oidc.client.hybrid\web.oidc.client.hybrid.csproj", "{1470D609-2AB3-42E7-9064-8CB5AAA581D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -189,6 +191,10 @@ Global
 		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1470D609-2AB3-42E7-9064-8CB5AAA581D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1470D609-2AB3-42E7-9064-8CB5AAA581D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1470D609-2AB3-42E7-9064-8CB5AAA581D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1470D609-2AB3-42E7-9064-8CB5AAA581D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -226,6 +232,7 @@ Global
 		{D0461812-AB63-4C4F-B8C9-F01492AF9607} = {AB8D2454-E63A-4C44-B938-71DE4FB54315}
 		{2AE951EB-3485-4F75-A3E7-D815BC90F4F4} = {D0461812-AB63-4C4F-B8C9-F01492AF9607}
 		{6ADABFB5-E5C3-45EB-99E8-FDF562B192BF} = {7ED83187-9B67-441A-9130-14B539E44C30}
+		{1470D609-2AB3-42E7-9064-8CB5AAA581D2} = {7ED83187-9B67-441A-9130-14B539E44C30}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {305FC7CE-9C1D-4265-9FA8-2E523DEE4CBA}

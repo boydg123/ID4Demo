@@ -31,7 +31,7 @@ namespace ServerSite.Ids4
 
         private static void SetIdentityServerOptions(IdentityServerOptions options)
         {
-            options.IssuerUri = "http://oidc-server.test";
+            options.IssuerUri = "http://localhost:8010";
             options.UserInteraction = new UserInteractionOptions
             {
                 LoginUrl = "/account/login",
